@@ -1,55 +1,83 @@
 <template>
   <div id="app">
     <app-header></app-header>
-    <app-main></app-main>
+    <!-- <home-main></home-main> -->
+    <pricing-main></pricing-main>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-import AppHeader from './components/AppHeader.vue';
-import AppMain from './components/AppMain.vue';
+import AppHeader from "./components/AppHeader.vue";
+// import HomeMain from "./components/home/HomeMain.vue";
+import PricingMain from "./components/pricing/PricingMain.vue";
+import AppFooter from "./components/AppFooter.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
     AppHeader,
-    AppMain,
-  }
-}
+    // HomeMain,
+    PricingMain,
+    AppFooter,
+  },
+};
 </script>
 
-<style lang="scss">
-:root {
-  $fs-xs: .75rem;
-  $fs-s: .8125rem;
-  $fs-m: .9375rem;
-  $fs-l: 1.125rem;
-  $fs-xl: 2rem;
-  $fw-regular: 400;
-  $fw-bold: 700;
+<style lang="scss" scroped>
+@mixin sm {
+  @media (min-width: 600px) {
+      @content;
+  }
+}
+@mixin md {
+  @media (min-width: 900px) {
+      @content;
+  }
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-size: 12px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 ul {
   list-style: none;
 }
 a {
+  cursor: pointer;
   text-decoration: none;
   color: black;
   text-transform: uppercase;
+  
 }
 .btn {
+  cursor: pointer;
   background-color: black;
   color: white;
   width: 19.375rem;
   height: 3rem;
   text-transform: uppercase;
+  font-size: 15px;
+  line-height: 20px;
+  transition: all .5s;
+  @include sm {
+    width: 9.875rem;
+    height: 2.5rem;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+  }
+  &:hover {
+     background-color:  #DFDFDF;
+  color: black;
+  }
+}
+button {
+  cursor: pointer;
+
 }
 figure {
   width: 100%;
@@ -57,12 +85,11 @@ figure {
 }
 img {
   display: block;
-   width: 100%;
+  width: 100%;
   height: 100%;
 }
 button {
   border: none;
   background-color: transparent;
 }
-
 </style>
