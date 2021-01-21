@@ -2,7 +2,8 @@
   <div id="app">
     <app-header></app-header>
     <!-- <home-main></home-main> -->
-    <pricing-main></pricing-main>
+    <!-- <pricing-main></pricing-main> -->
+    <features-main></features-main>
     <app-footer></app-footer>
   </div>
 </template>
@@ -10,14 +11,16 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 // import HomeMain from "./components/home/HomeMain.vue";
-import PricingMain from "./components/pricing/PricingMain.vue";
+// import PricingMain from "./components/pricing/PricingMain.vue";
+import FeaturesMain from "./components/features/FeaturesMain.vue";
 import AppFooter from "./components/AppFooter.vue";
 export default {
   name: "App",
   components: {
     AppHeader,
     // HomeMain,
-    PricingMain,
+    // PricingMain,
+    FeaturesMain,
     AppFooter,
   },
 };

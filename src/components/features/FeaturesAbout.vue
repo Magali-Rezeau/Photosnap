@@ -4,20 +4,18 @@
       <picture class="about-box-img">
         <source
           media="(min-width: 600px)  and (max-width: 1099px)"
-          srcset="./../../assets/img/pricing/hero-tablet.jpg"
+          srcset="./../../assets/img/features/hero-features-tablet.jpg"
         />
         <source
           media="(min-width: 1100px)"
-          srcset="./../../assets/img/pricing/hero-desktop.jpg"
+          srcset="./../../assets/img/features/hero-features-desktop.jpg"
         />
-        <img src="./../../assets/img/pricing/hero-mobile.jpg" alt="" />
+        <img src="./../../assets/img/features/hero-features-mobile.jpg" alt="" />
       </picture>
       <div class="about-box-text">
-        <h1>Pricing</h1>
+        <h1>Features</h1>
         <p>
-          Create a your stories, Photosnap is a platform for photographers and
-          visual storytellers. It’s the simple way to create and share your
-          photos.
+          We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.
         </p>
       </div>
     </div>
@@ -112,7 +110,9 @@ export default {};
         font-weight: 400;
         font-size: 15px;
         line-height: 25px;
+
         color: #ffffff;
+
         opacity: 0.6;
       }
     }
